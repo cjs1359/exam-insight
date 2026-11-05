@@ -1,0 +1,15 @@
+*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:linear-gradient(160deg,#fff8e1,#e3f4ec);min-height:100vh;color:#2f3a33;line-height:1.6}
+#rv{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+.rh{text-align:center}.rh h1{color:#1f6e5c;margin:6px 0;font-size:26px}.steps{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:8px 0 16px}.steps span{background:#fff;border-radius:20px;padding:4px 12px;font-size:13px;color:#888}.steps span.on{background:#2f8f7a;color:#fff}
+.box{background:#fff;border-radius:18px;padding:18px;box-shadow:0 4px 14px #2f8f7a1a;margin-bottom:14px}
+.qs{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px}.qs button{font-size:18px;padding:12px 0;border-radius:12px;border:2px solid #cfe5dc;background:#fff;cursor:pointer}.qs button.sel{background:#ff8a65;border-color:#ff8a65;color:#fff;font-weight:700}
+.go{display:block;width:100%;border:0;background:#2f8f7a;color:#fff;font-size:18px;padding:12px;border-radius:14px;cursor:pointer;margin-top:12px}.go.alt{background:#fff;color:#2f8f7a;border:2px solid #2f8f7a}.go:disabled{opacity:.4}
+.unit{display:inline-block;background:#e3f4ec;color:#1f6e5c;border-radius:10px;padding:0 8px;font-size:12px}
+.qt{font-size:19px;font-weight:600;margin:8px 0}.opt{display:block;width:100%;text-align:left;font-size:17px;padding:11px 14px;margin:7px 0;border:2px solid #e2e8e4;border-radius:12px;background:#fafdfb;cursor:pointer}
+.opt.right{border-color:#3a9d5d;background:#e6f6ea}.opt.wrong{border-color:#e46a5e;background:#fdecea}
+.fb{padding:10px 12px;border-radius:12px;margin-top:8px;font-size:16px}.fb.ok{background:#e6f6ea;color:#2a7a45}.fb.no{background:#fdecea;color:#b03a2e}
+.exp{background:#fff8e1;border-left:4px solid #f3b33d;padding:8px 12px;border-radius:8px;margin-top:8px}
+input.fill{font-size:18px;padding:10px;border-radius:10px;border:2px solid #cfe5dc;width:100%}
+.prog{height:10px;background:#e8eee9;border-radius:6px;overflow:hidden;margin:6px 0 10px}.prog i{display:block;height:100%;background:linear-gradient(90deg,#ffb74d,#2f8f7a)}
+.done{text-align:center}.done .big{font-size:64px}.seatin{font-size:18px;padding:8px;border-radius:10px;border:2px solid #cfe5dc;width:120px;text-align:center}
+.small{font-size:13px;color:#777}

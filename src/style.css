@@ -1,0 +1,28 @@
+:root{--paper:#faf6ec;--ink:#2f3a33;--jade:#2f8f7a;--jade2:#dcefe7;--blue:#3a6ea5;--red:#d9534f;--amber:#e3a21a;--ok:#3a9d5d;--line:#e4dccb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.6}
+.top{background:linear-gradient(120deg,#e8f3ec,#f6efdc);padding:18px 32px 0;border-bottom:3px solid var(--jade)}
+h1{margin:0;font-size:28px;color:#1f5e50}.sub{margin:4px 0 12px;color:#5b6b60;font-size:14px}
+nav{display:flex;gap:6px;flex-wrap:wrap}nav button{border:0;background:#fff8;padding:10px 16px;border-radius:10px 10px 0 0;font-size:15px;cursor:pointer;color:var(--ink)}nav button.on{background:var(--paper);font-weight:700;color:var(--jade);box-shadow:0 -2px 0 var(--jade) inset}
+main{max-width:1180px;margin:0 auto;padding:22px 28px 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px;box-shadow:0 2px 6px #0000000a}
+.card h2{margin:0 0 10px;font-size:19px;color:#1f5e50}
+.btn{border:0;background:var(--jade);color:#fff;padding:9px 16px;border-radius:9px;font-size:15px;cursor:pointer;margin:4px 6px 4px 0}.btn.alt{background:#fff;color:var(--jade);border:1.5px solid var(--jade)}.btn.warn{background:#b85c38}
+textarea{width:100%;min-height:180px;font-family:ui-monospace,monospace;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fffdf8}
+pre.prompt{white-space:pre-wrap;background:#f3f8f5;border-left:4px solid var(--jade);padding:12px 14px;border-radius:6px;font-size:14px;max-height:340px;overflow:auto}
+.tips{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0;list-style:none}.tips li{background:var(--jade2);border-radius:10px;padding:10px 12px;font-size:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stats{display:flex;gap:14px;flex-wrap:wrap}.stat{flex:1;min-width:140px;background:#f3f8f5;border-radius:12px;padding:10px 14px}.stat b{display:block;font-size:26px;color:#1f5e50}
+.bars .row{display:grid;grid-template-columns:150px 1fr 56px;align-items:center;gap:8px;margin:5px 0;font-size:14px}.bars .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{background:#f1ede3;border-radius:6px;height:20px;overflow:hidden}.fill{height:100%;border-radius:6px}
+.high{background:var(--red)}.mid{background:var(--amber)}.low{background:var(--ok)}.none{background:#bbb}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;color:#fff}.legend{font-size:13px;color:#5b6b60}
+.hist{display:flex;align-items:flex-end;gap:6px;height:160px;border-bottom:1px solid var(--line);padding-top:10px}.hist div{flex:1;text-align:center;font-size:12px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}.hist span.b{background:var(--blue);border-radius:4px 4px 0 0;display:block;min-height:2px}.histlab{display:flex;gap:6px;font-size:11px;color:#777}.histlab span{flex:1;text-align:center}
+.sugg li{margin:6px 0}.sugg .u{font-weight:700}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}th{background:#f3f8f5}
+td input,td select{width:100%;border:1px solid #ddd;border-radius:4px;padding:3px 5px;font-size:13px}
+.seat{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}.seat div{background:#fbf9f3;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px}
+.msg{padding:8px 12px;border-radius:8px;background:#eaf6ef;color:#1f5e50;margin:8px 0}.msg.err{background:#fdecea;color:#a33}
+.linkbox{word-break:break-all;font-size:12px;background:#f8f8f8;padding:8px;border-radius:6px;max-height:90px;overflow:auto}
+.th input{width:60px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}.tips{grid-template-columns:1fr 1fr}}
+@media print{nav,.noprint,.top .sub{display:none!important}body{background:#fff}.card{break-inside:avoid;box-shadow:none}main{padding:0}.fill,.hist span.b,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
